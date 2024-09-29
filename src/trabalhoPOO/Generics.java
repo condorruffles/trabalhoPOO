@@ -12,6 +12,6 @@ public class Generics<T> {
 	}
 	
 	public void exemploGenerics() {
-		System.out.printf("\nValor do objeto: " + objeto + "\nTipo do objeto: " + objeto.getClass());
+		System.out.printf("\nValor do objeto: " + objeto + "\nTipo do objeto: " + objeto.getClass() + "\n");
 	}
 }

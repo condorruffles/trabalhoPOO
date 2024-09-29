@@ -1,10 +1,10 @@
 package trabalhoPOO;
 
-public class Matrizes {
+public class Matriz {
 	
 	private int index;
 	
-	public Matrizes(int index) {
+	public Matriz(int index) {
 		this.index = index;
 	}
 	
@@ -19,6 +19,7 @@ public class Matrizes {
 					System.out.print(" ");
 			}
 		}
+		System.out.println();
 	}
 	
 	public void bidimensional() {
@@ -37,6 +38,6 @@ public class Matrizes {
 			somaPrincipal += matriz[i][i];
 			somaSecundaria += matriz[i][index - 1 - i];
 		}
-		System.out.printf("Soma diagonal Principal: " + somaPrincipal + "\nSoma diagonal Secundária: " + somaSecundaria);
+		System.out.printf("Soma diagonal Principal: " + somaPrincipal + "\nSoma diagonal Secundária: " + somaSecundaria + "\n");
 	}
 }

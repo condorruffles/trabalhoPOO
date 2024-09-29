@@ -10,7 +10,7 @@ public class ArrayLists {
 		char opcao;
 		ArrayList<String> pessoas = new ArrayList<>();
 
-		pessoas.addAll(Arrays.asList("Arthur", "Kiko", "Boli", "Adinei", "Raphael", "Raniel", "Vinicius"));
+		pessoas.addAll(Arrays.asList("ARTHUR", "KIKO", "BOLI", "ADINEI", "RAPHAEL", "RANIEL", "VINICIUS"));
 
 		System.out.println(pessoas + "\nTamanho da lista: " + pessoas.size());
 
@@ -22,8 +22,8 @@ public class ArrayLists {
 				if (add == 'R' || add == 'r') {
 					System.out.printf("\nRemova uma pessoa da lista ('Digite o nome da pessoa'):\n");
 					String pessoa = scan.next();
-					if (pessoas.contains(pessoa)) {
-						pessoas.remove(pessoa);
+					if (pessoas.contains(pessoa.toUpperCase())) {
+						pessoas.remove(pessoa.toUpperCase());
 					} else {
 						System.out.println("Não foi encontrada uma pessoa com o nome: " + pessoa);
 					}
@@ -33,7 +33,7 @@ public class ArrayLists {
 					System.out.printf("\nAdicione uma pessoa da lista ('Digite o nome da pessoa'):\n");
 					String pessoa = scan.next();
 
-					pessoas.add(pessoa);
+					pessoas.add(pessoa.toUpperCase());
 				}
 
 				if (add != 'A' && add != 'a' && add != 'r' && add != 'R') {
@@ -50,10 +50,8 @@ public class ArrayLists {
 				}
 			} while (opcao != 'N' && opcao != 'n' && opcao != 'S' && opcao != 's');
 		} while (opcao != 'N' && opcao != 'n');
-		
-		scan.close();
-		
-		//Usando forEach para imprimir a lista final
+
+		// Usando forEach para mostrar a lista
 		System.out.println("Lista final de pessoas: ");
 		for (String pessoa : pessoas) {
 			System.out.println(pessoa);
