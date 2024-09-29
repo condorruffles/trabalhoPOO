@@ -5,11 +5,14 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		//Instanciando objeto 'scan' da classe Scanner para ler o terminal
 		Scanner scan = new Scanner(System.in);
+		//Declarando variáveis globais
 		int op;
 		int tamanho;
 		char SN;
 
+		//Menu inicial com validações das escolhas
 		System.out.printf("--- Trabalho de POO: ---\n\n");
 		System.out.println("Selecione o conteúdo:");
 		do {
