@@ -1,7 +1,2 @@
-# Ignorar arquivos e pastas específicos do Eclipse IDE
-.classpath
-.project
-.settings/
-
 # Ignorar a pasta bin que contém os arquivos compilados
 bin/
